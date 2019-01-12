@@ -6,4 +6,4 @@ const fs = require('fs');
 jsf.extend('faker', () => faker);
 const data = JSON.stringify(jsf.generate(schema), null, 2);
 
-fs.writeFile(`${__dirname}/../db.json`, data, e => e ? console.log(e) : console.log('Data generated'));
+fs.writeFile(`${__dirname}/../db.json`, data, e => console.log(e || 'Data generated'));
