@@ -3,8 +3,8 @@
 
 <p align="center">
 <img width="150" height="150" src="https://raw.githubusercontent.com/docker/compose/master/logo.png" alt="Docker compose logo">
-<img width="150" height="150" src="https://raw.githubusercontent.com/json-schema-faker/json-schema-faker/master/logo/JSF_logo.png" alt="JSON Schema faker">&nbsp;
-<img width="150" height="150" src="https://raw.githubusercontent.com/Marak/faker.js/master/logo.png" alt="faker.js">&nbsp;
+<img width="300" height="150" src="https://raw.githubusercontent.com/json-schema-faker/json-schema-faker/master/logo/JSF_logo.png" alt="JSON Schema faker">&nbsp;
+<img width="300" height="150" src="https://raw.githubusercontent.com/Marak/faker.js/master/logo.png" alt="faker.js">&nbsp;
 </p>
 
 ---
