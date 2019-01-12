@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  json-server:
+    image: node:10-alpine
+    working_dir: /workspace
+    volumes:
+      - ./node_modules:/workspace/node_modules
+      - ./package.json:/workspace/package.json
+      - ./src/json-server:/workspace/json-server
+    stdin_open: true
+    tty: true
+    command: yarn start
+    ports:
+      - 13000:13000
+    restart: always
