@@ -12,7 +12,11 @@ generate:
 
 .PHONY: up
 up:
-	docker-compose down && docker-compose up
+	docker-compose up
+
+.PHONY: down
+down:
+	docker-compose down
 
 .PHONY: clean
 clean:
