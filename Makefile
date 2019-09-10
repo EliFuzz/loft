@@ -10,6 +10,10 @@ setup:
 generate:
 	$(DOCKER_COMPOSE_RUN) "yarn generate"
 
+.PHONY: init
+init:
+	$(DOCKER_COMPOSE_RUN) "yarn install"
+
 .PHONY: up
 up:
 	docker-compose up -d
