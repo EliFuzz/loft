@@ -13,28 +13,15 @@
 - Docker
 
 ## Usage:
-1. Init the project:
-
-```bash
-make setup
-```
-
-2. Start the project:
+1. Start the project:
 
 ```bash
 make up
 ```
 
-3. Navigate to [http://0.0.0.0:13000](http://0.0.0.0:13000)
-
+2. Navigate to [http://localhost:13000](http://localhost:13000)
 
 ## Commands:
-
-- Initialize the project:
-
-```bash
-make setup
-```
 
 - Start the project:
 
@@ -42,10 +29,10 @@ make setup
 make up
 ```
 
-- (Re)generate data:
+- Stop the project:
 
 ```bash
-make generate
+make down
 ```
 
 - Perform cleaning:
