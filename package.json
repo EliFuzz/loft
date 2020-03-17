@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is a Docker Compose boilerplate for fake REST API with json-schema-faker and faker.js",
   "scripts": {
-    "json-server": "cd json-server && json-server -w db.json",
+    "json-server": "cd json-server && json-server -H 0.0.0.0 -p 13000 -w db.json",
     "generate": "node json-server/faker/generateDb",
     "start": "yarn json-server"
   },
