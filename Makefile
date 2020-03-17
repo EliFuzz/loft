@@ -1,22 +1,11 @@
 SHELL = /bin/bash
 
 DOCKER_COMPOSE_RUN=docker-compose run --rm json-server sh -c
-
-.PHONY: setup
-setup:
-	$(DOCKER_COMPOSE_RUN) "yarn && yarn generate"
-
-.PHONY: generate
-generate:
-	$(DOCKER_COMPOSE_RUN) "yarn generate"
-
-.PHONY: init
-init:
-	$(DOCKER_COMPOSE_RUN) "yarn install"
+JSON_DB="./src/json-server/db.json"
 
 .PHONY: up
 up:
-	docker-compose up -d
+	[ -d node_modules ] || $(DOCKER_COMPOSE_RUN) "yarn" && [ -f $(JSON_DB) ] || $(DOCKER_COMPOSE_RUN) "yarn generate" && docker-compose up -d
 
 .PHONY: down
 down:
@@ -24,4 +13,4 @@ down:
 
 .PHONY: clean
 clean:
-	rm -rf node_modules && rm -f ./src/json-server/db.json
+	rm -rf node_modules && rm -f $(JSON_DB)
