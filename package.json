@@ -1,5 +1,5 @@
 {
-  "name": "LOFT",
+  "name": "loft",
   "version": "1.0.0",
   "description": "This is a Docker Compose boilerplate for fake REST API with json-schema-faker and faker.js",
   "scripts": {
@@ -11,13 +11,20 @@
     "type": "git",
     "url": "https://github.com/EliFuzz/loft"
   },
-  "keywords": ["Docker", "docker-compose", "JSON server", "JSON schema faker", "faker.js", "REST API"],
+  "keywords": [
+    "Docker",
+    "docker-compose",
+    "JSON server",
+    "JSON schema faker",
+    "faker.js",
+    "REST API"
+  ],
   "author": "Roman Glushach",
   "license": "MIT",
   "homepage": "https://github.com/EliFuzz/loft#readme",
   "devDependencies": {
-    "json-server": "^0.14.2",
-    "json-schema-faker": "^0.5.0-rc16",
-    "faker": "^4.1.0"
+    "json-server": "0.16.1",
+    "json-schema-faker": "0.5.0-rc23",
+    "faker": "4.1.0"
   }
 }
