@@ -1,5 +1,7 @@
 SHELL = /bin/bash
 
+MAKEFLAGS += --silent
+
 DOCKER_COMPOSE_RUN=docker-compose run --rm json-server sh -c
 JSON_DB="./src/json-server/db.json"
 
@@ -13,4 +15,4 @@ down:
 
 .PHONY: clean
 clean:
-	rm -rf node_modules && rm -f $(JSON_DB)
+	docker-compose down && rm -rf node_modules && rm -f $(JSON_DB)
